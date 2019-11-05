@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".publishSuggestion"
+    android:background="@drawable/arch_back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLay"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:id="@+id/titleId"
+            android:hint="Title"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/textview_background"
+            android:layout_margin="10dp"
+            android:textAllCaps="true"
+            android:textColorHint="#14171B"/>
+
+        <EditText
+            android:id="@+id/publishId"
+            android:layout_width="match_parent"
+            android:layout_height="516dp"
+            android:layout_marginTop="100sp"
+            android:background="@drawable/textview_background"
+            android:hint="Write your information here"
+            android:inputType="textMultiLine"
+            android:textSize="20sp"
+            android:gravity="top"
+            android:textColorHint="#14171B"/>
+
+
+    <Button
+        android:id="@+id/publishButtonId"
+        android:layout_width="280dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/publishId"
+        android:text="Publish"
+        android:textColor="#DBC039"
+        android:background="@drawable/yellow_stroke"/>
+
+    </RelativeLayout>
+
+</ScrollView>

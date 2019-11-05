@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="30dp"
+    android:elevation="200sp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:id="@+id/cardViewId">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeId"
+        android:layout_margin="10dp"
+        android:background="@drawable/display_border">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/broadCastId"
+            android:text="Broadcasted by:"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameOfAdminId"
+            android:text="Name of Admin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateId"
+            android:text="Date"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeId"
+            android:text="Time"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginStart="140dp"/>
+
+        <TextView
+            android:id="@+id/theTitleId"
+            android:layout_width="255dp"
+            android:layout_height="31dp"
+            android:layout_below="@id/timeId"
+            android:text="Title of query"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="this is where the admin post will be displayed...
+i know this is the best place to put it..just looking for something to write"
+        android:id="@+id/textId"
+        android:layout_below="@id/theTitleId"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupId"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textId"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yesButtonId"
+            android:text="Yes"
+            android:textSize="18sp"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noButtonId"
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/neutralButtonId"
+            android:text="Neutral"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"/>
+
+
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/voteButtonId"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroupId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="vote" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

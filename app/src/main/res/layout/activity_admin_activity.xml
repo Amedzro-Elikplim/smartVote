@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_activity"
+    android:background="@drawable/arch_back"
+    android:padding="30dp">
+
+    <ImageView
+        android:id="@+id/homeImageId"
+        android:layout_width="130dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/home_blue_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeTextId"
+        android:layout_below="@id/homeImageId"
+        android:text="see your queries"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/publishNewInfoId"
+        android:layout_width="400dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/homeTextId"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/yellow_stroke"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="publish new info"
+        android:textSize="30sp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/aboutId"
+        android:layout_width="400dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/publishNewInfoId"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="About"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:elevation="50dp"/>
+
+
+    <Button
+        android:id="@+id/logoutAdminId"
+        android:layout_width="400dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/aboutId"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_border"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Admin logout"
+        android:textSize="30sp"
+        android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+
+

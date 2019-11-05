@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reports_activity"
+    android:background="@drawable/arch_back">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reportsCardViewId"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryTitleId"
+        android:layout_centerHorizontal="true"
+        android:text="SUMMARY OF VOTE"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold|italic"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryOfYesId"
+        android:layout_below="@id/summaryTitleId"
+        android:layout_marginTop="20dp"
+        android:text="YES:"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryOfYesVotesId"
+        android:layout_below="@id/summaryTitleId"
+        android:layout_marginTop="20dp"
+        android:text="Number of votes"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/summaryOfYesId"
+        android:layout_toEndOf="@id/summaryOfYesId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryOfNoId"
+        android:layout_below="@id/summaryOfYesId"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="NO:"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryOfNoVotesId"
+        android:layout_below="@id/summaryOfYesId"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Number of votes"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/summaryOfNoId"
+        android:layout_toEndOf="@+id/summaryOfNoId"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryOfNeutralId"
+        android:layout_below="@id/summaryOfNoId"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="NEUTRAL:"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summaryOfNeutralVotesId"
+        android:layout_below="@id/summaryOfNoId"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Number of votes"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/summaryOfNeutralId"
+        android:layout_toEndOf="@id/summaryOfNeutralId"
+        android:layout_marginTop="10dp"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

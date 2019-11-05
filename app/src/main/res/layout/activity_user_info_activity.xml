@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_info_activity"
+    android:background="@drawable/arch_back"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTextId"
+        android:text="select your status"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="190dp"
+        android:textColor="#fff"/>
+
+    <Spinner
+        android:id="@+id/spinnerId"
+        android:layout_width="359dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/spinnerTextId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="#fff"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:hint="Full Name"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="364dp"
+            android:layout_height="53dp"
+            android:id="@+id/fullNameId"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Department"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="364dp"
+            android:layout_height="53dp"
+            android:id="@+id/departmentId"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Work ID"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="364dp"
+            android:layout_height="53dp"
+            android:id="@+id/workId"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/saveButtonId"
+        android:layout_width="383dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="save info"
+        android:background="@drawable/button_style"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_validation"
+    android:background="@drawable/arch_back"
+    android:padding="20sp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout"
+        android:layout_width="367dp"
+        android:layout_height="73dp"
+        android:layout_centerInParent="true"
+        app:passwordToggleEnabled="true"
+        android:hint="Enter admin validation code"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="356dp"
+            android:layout_height="57dp"
+            android:inputType="numberPassword"
+            android:id="@+id/adminCodeId"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColor="#fff"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/layout"
+        android:layout_centerHorizontal="true"
+        android:text="validate"
+        android:layout_marginTop="10dp"
+        android:id="@+id/validateButtonId"
+        android:background="@drawable/button_border"
+        android:textColor="#F5F5F7"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"/>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".votesCountActivity"
+    android:background="@drawable/arch_back">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/cardViewID"
+            android:background="@drawable/button_border">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutId"
+                android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/queryTitleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Title of query"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/queryBodyId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="the admin post will be displayed here....admin
+                post will be displayed here admin post will be displayed here admin post will be dis
+                played here admin post will be displayed here"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/reportButtonId"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/cardViewID"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="120dp"
+        android:background="@drawable/yellow_stroke"
+        android:text="generate report"
+        android:textSize="20sp"
+        android:textColor="#E9D46E"/>
+
+    <Button
+        android:id="@+id/editButtonId"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/reportButtonId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yellow_stroke"
+        android:text="Edit"
+        android:textSize="20sp"
+        android:textColor="#E9D46E"/>
+
+    <Button
+        android:id="@+id/deleteButtonId"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/editButtonId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
+        android:text="delete"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up_activity"
+    android:background="@drawable/arch_back"
+    android:padding="30dp">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:id="@+id/emailLayoutID"
+        android:layout_marginTop="300dp"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:id="@+id/emailID"
+            android:inputType="textEmailAddress"
+            android:textSize="22sp"
+            android:textColor="#fff"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayoutID"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:id="@+id/passwordLayoutID"
+        app:passwordToggleEnabled="true"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:id="@+id/passwordID"
+            android:inputType="textPassword"
+            android:textSize="22sp"
+            android:textColor="#fff"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordLayoutID"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        android:id="@+id/confirmPasswordLayoutID"
+        app:passwordToggleEnabled="true"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:id="@+id/confirmPasswordID"
+            android:inputType="textPassword"
+            android:textSize="22sp"
+            android:textColor="#fff"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonID"
+        android:layout_width="184dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/confirmPasswordLayoutID"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:text="create account"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_style"
+        android:textSize="19sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/SavebuttonID"
+        android:layout_width="184dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/confirmPasswordLayoutID"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="20dp"
+        android:text="login"
+        android:textColor="#CAB215"
+        android:background="@drawable/yellow_stroke"/>
+
+
+
+
+</RelativeLayout>
